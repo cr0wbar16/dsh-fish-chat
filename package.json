@@ -1,0 +1,11 @@
+{
+  "name": "dsh-fish-chat",
+  "version": "0.1.0",
+  "description": "把大肥鱼双击输入框发来的 user_message 注入当前 DSH 会话",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": { ".": "./lib/index.js", "./cordis.patch.yml": "./cordis.patch.yml", "./package.json": "./package.json" },
+  "files": ["lib", "cordis.patch.yml"],
+  "license": "MIT",
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}
